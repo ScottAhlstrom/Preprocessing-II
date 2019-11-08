@@ -3,29 +3,58 @@
 .navigation {
     display: flex;
     justify-content: space-between;
-    margin: 5% 0 3% 0;
+    margin: 5% 0 1% 0;
     align-items: center;
-    width: 78%;
-   
+
+    
+    
+    .top-nav {
+        display: flex;
+        justify-content: space-between;
+        margin: 0 auto;
+        width: 800px;
+
+        @media @mobile {
+            flex-direction: column;
+            width: 100%;
+
+    
+        }
+    }
+
     .company-name {
-        margin-left: 30%;
+        margin-bottom: 3%;
        
+        @media @mobile {
+            text-align: center;
+            padding-bottom: 4%;
+            margin-bottom: 1%;
+        }
+
     }
     
     nav {
         display: flex;
         justify-content: space-between;
-        width: 30%;
+        width: 50%;
+
+        @media @mobile {
+            width: 100%;
+            justify-content: space-evenly;
+            padding-left: 5%;
+        }
 
     }
 
     a {
         color: black;
         text-decoration: none;
-        width: 40%;
+       
         // padding: 0 2%;
         font-size: 1.7rem;
         margin-right: 0%;
+        margin-bottom: 0%;
+
         
     }
 }
